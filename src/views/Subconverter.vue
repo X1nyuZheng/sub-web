@@ -276,8 +276,8 @@ export default {
             label: "默认",
             options: [
               {
-                label: "不选，由接口提供方提供",
-                value: ""
+                label: "自建",
+                value: "https://raw.githubusercontent.com/X1nyuZheng/Clash-Rule/master/Clash/TAG.ini"
               }
             ]
           },
@@ -495,14 +495,14 @@ export default {
         nodeList: false,
         extraset: false,
         sort: false,
-        udp: false,
-        tfo: false,
+        udp: true,
+        tfo: true,
         scv: false,
-        expand: true, // 是否将规则全文写进配置文件
+        expand: false, // 是否将规则全文写进配置文件
         fdn: false,
         appendType: false,
         insert: false, // 是否插入默认订阅的节点，对应配置项 insert_url
-        new_name: true, // 是否使用 Clash 新字段
+        new_name: false, // 是否使用 Clash 新字段
       },
 
       loading: false,

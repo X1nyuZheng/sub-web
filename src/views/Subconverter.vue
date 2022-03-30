@@ -255,8 +255,8 @@ export default {
           "自动判断客户端": "auto",
         },
         customBackend: {
+          "xsub7.vercel.app(xinyu自建)": "https://xsub7.vercel.app/sub?",
           "localhost:25500 本地版": "http://localhost:25500/sub?",
-          "sub-beta.vercel.app": "https://sub-beta.vercel.app/sub?",
           "subcon.dlj.tf(subconverter作者提供-稳定)":
             "https://subcon.dlj.tf/sub?",
           "api.dler.io(sub作者&lhie1提供-稳定)": "https://api.dler.io/sub?",
@@ -264,8 +264,8 @@ export default {
           "sub.id9.cc(品云转换)": "https://sub.id9.cc/sub?",
         },
         backendOptions: [
+          { value: "https://xsub7.vercel.app/sub?" },
           { value: "http://localhost:25500/sub?" },
-          { value: "https://sub-beta.now.sh/sub?" },
           { value: "https://subcon.dlj.tf/sub?" },
           { value: "https://api.dler.io/sub?" },
           { value: "https://api.wcc.best/sub?" },
@@ -554,7 +554,7 @@ export default {
   mounted() {
     this.form.clientType = "clash";
     this.form.customBackend = defaultBackend;
-    this.form.remoteConfig = "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/config/ACL4SSR_Online.ini";
+    this.form.remoteConfig = "https://raw.githubusercontent.com/X1nyuZheng/Clash-Rule/master/Clash/TAG.ini";
     this.getBackendVersion();
   },
   methods: {
